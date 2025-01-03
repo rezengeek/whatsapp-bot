@@ -36,3 +36,93 @@ client.on('message', async msg => {
   
       
   }
+
+  if (msg.body !== null && msg.body === '1' && msg.from.endsWith('@c.us')) {
+    const chat = await msg.getChat();
+
+
+    await delay(3000); // 3 seconds delay
+    await chat.sendStateTyping(); // Simulating Typing
+    await delay(3000);
+    await client.sendMessage(msg.from, '\n\nLorem ipsum dolor.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero dolores.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero dolores.');
+
+    await delay(3000); // 3 seconds delay
+    await chat.sendStateTyping(); // Simulating Typing
+    await delay(3000);
+    await client.sendMessage(msg.from, 'Lorem ipsum dolor\nLorem ipsum dolor\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero dolores.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero dolores.\n\nLorem ipsum dolor');
+
+    await delay(3000); // 3 seconds delay
+    await chat.sendStateTyping(); // Simulating Typing
+    await delay(3000);
+    await client.sendMessage(msg.from, 'Link: https://rezcode.net');
+
+
+}
+
+if (msg.body !== null && msg.body === '2' && msg.from.endsWith('@c.us')) {
+  const chat = await msg.getChat();
+
+
+  await delay(3000); //3 seconds delay
+  await chat.sendStateTyping(); // Simulating Typing
+  await delay(3000);
+  await client.sendMessage(msg.from, '\n\nLorem ipsum dolor.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero dolores.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero dolores.');
+
+  await delay(3000); //3 seconds delay
+  await chat.sendStateTyping(); // Simulating Typing
+  await delay(3000);
+  await client.sendMessage(msg.from, 'Link: https://rezcode.net');
+}
+
+if (msg.body !== null && msg.body === '3' && msg.from.endsWith('@c.us')) {
+  const chat = await msg.getChat();
+
+
+  await delay(3000); //3 seconds delay
+  await chat.sendStateTyping(); // Simulating Typing
+  await delay(3000);
+  await client.sendMessage(msg.from, 'Lorem ipsum dolor.\n\nLorem ipsum dolor Lorem ipsum dolor.\n\nLorem ipsum dolor.');
+  
+  await delay(3000); //3 seconds delay
+  await chat.sendStateTyping(); // Simulating Typing
+  await delay(3000);
+  await client.sendMessage(msg.from, 'Link: https://rezcode.net');
+
+}
+
+if (msg.body !== null && msg.body === '4' && msg.from.endsWith('@c.us')) {
+  const chat = await msg.getChat();
+
+  await delay(3000); //3 seconds delay
+  await chat.sendStateTyping(); // Simulating Typing
+  await delay(3000);
+  await client.sendMessage(msg.from, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero dolores.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit.');
+
+
+  await delay(3000); //3 seconds delay
+  await chat.sendStateTyping(); // Simulating Typing
+  await delay(3000);
+  await client.sendMessage(msg.from, 'Link: https://rezcode.net');
+
+
+}
+
+if (msg.body !== null && msg.body === '5' && msg.from.endsWith('@c.us')) {
+  const chat = await msg.getChat();
+
+  await delay(3000); //3 seconds delay
+  await chat.sendStateTyping(); // Simulating Typing
+  await delay(3000);
+  await client.sendMessage(msg.from, 'Se você tiver outras dúvidas ou precisar de mais informações, por favor, fale aqui nesse whatsapp ou visite nosso site: https://rezcode.netgit');
+
+
+}
+
+
+
+
+
+
+
+
+});
