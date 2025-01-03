@@ -1,5 +1,5 @@
 # WhatsApp Bot
-WhatsApp Bot for rezcode company using the whatsapp-web.js library, which is an unofficial API for automating messages via WhatsApp Web.
+WhatsApp Bot for <strong>Rezcode</strong> company using the whatsapp-web.js library, which is an unofficial API for automating messages via WhatsApp Web.
 
 
 
